@@ -16,6 +16,23 @@
         mapbox:center_longitude="-73.99155"
         mapbox:zoom="11"/>
 
+    <com.mapbox.services.android.geocoder.ui.GeocoderAutoCompleteView
+        android:id="@+id/query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/white"
+        android:elevation="12dp"
+        android:hint="Search Location"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@android:color/black" />
+
     <ImageButton
         android:id="@+id/search_btn"
         android:layout_width="wrap_content"
@@ -41,7 +58,7 @@
         android:background="#00ffffff"/>
 
     <ImageButton
-        android:id="@+id/location_btn"
+        android:id="@+id/locate_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/search_btn"
