@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:logo_enabled="false"
+        mapbox:attribution_gravity="top|right"
+        mapbox:my_location_enabled="true"
+        mapbox:style_url="mapbox://styles/maper/ciqn9yuj90009bnnolbp8i3nb"
+        mapbox:center_latitude="40.73581"
+        mapbox:center_longitude="-73.99155"
+        mapbox:zoom="11"/>
+
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_search_white_24dp"
+        android:background="#00ffffff" />
+
+    <ImageButton
+        android:id="@+id/report_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/search_btn"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pokeball"
+        android:scaleType="fitCenter"
+        android:padding="0dp"
+        android:background="#00ffffff"/>
+
+    <ImageButton
+        android:id="@+id/location_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_my_location_white_24dp"
+        android:background="#00ffffff" />
+</RelativeLayout>
